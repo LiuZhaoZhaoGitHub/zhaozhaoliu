@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+textarea,
+select,
+input,
+button {
+    font-size: 12px;
+    color: #333;
+    font-family: quote, "PingFang SC", "Microsoft Yahei", "Helvetica Neue", "Helvetica", "STHeitiSC-Light", "Arial", "simsun", sans-serif;
+    -webkit-text-size-adjust: none;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+ul,
+menu,
+dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.n-banner {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+}
+
+.n-banner ul {
+    height: 480px;
+}
+
+.f-pr {
+    position: relative;
+    zoom: 1;
+}
+
+.f-cb {
+    zoom: 1;
+}
+
+.n-banner li {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 480px;
+    background-repeat: repeat-x;
+    background-size: cover;
+    opacity: 0;
+}
+
+.f-pa {
+    position: absolute;
+}
+
+li,
+s {
+    list-style: none;
+}

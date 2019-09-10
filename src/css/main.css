@@ -1,0 +1,437 @@
+.g-bd-home {
+    padding-bottom: 160px;
+}
+
+.g-bd {
+    width: 1100px;
+    min-height: 750px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.g-bd .ma {
+    width: 100%;
+    margin: 0;
+}
+
+.subjs {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.pad-right {
+    padding-right: 16px;
+}
+
+.subj {
+    float: left;
+    width: 542px;
+    height: 300px;
+}
+
+.subj img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 编辑推荐区 */
+
+.m-block {
+    margin-top: 50px;
+}
+
+.m-block {
+    width: 100%;
+    height: auto;
+    margin-top: 66px;
+}
+
+.m-block .mid-bold {
+    font-size: bold;
+}
+
+.m-block .mid-txt {
+    font-size: 24px;
+    color: #333;
+}
+
+.m-product .list {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    padding-left: 0px;
+}
+
+.m-product .list li {
+    float: left;
+    position: relative;
+    width: 263px;
+    height: 382px;
+    padding-right: 16px;
+}
+
+.m-product .cnt .txt {
+    font-size: 16px;
+    color: #d33a31;
+}
+
+s,
+strike,
+del {
+    text-decoration: line-through;
+}
+
+.m-product .tag-red {
+    border: 1px solid #d74d45;
+}
+
+.m-product .tag {
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 19px;
+    padding: 0 3px;
+    border-radius: 1px;
+    color: #d74d45;
+    font-size: 12px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.m-product .cnt h3 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #333;
+}
+
+.m-product .cover .spec .cut {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+/* 减免 */
+
+.m-product .cover .spec {
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+    background-color: #d33a31;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.m-product .cover .spec .origin {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* 数字专辑区 */
+
+.digalb {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+}
+
+.f-mge10 {
+    margin-top: 10px;
+}
+
+.digalb .cnt {
+    width: 700px;
+    margin: 0 20px 0 60px;
+}
+
+.digalb .inner {
+    height: 180px;
+}
+
+.digalb .inner span {
+    display: block;
+    padding-top: 28px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #0000;
+}
+
+.digalb .inner span i {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/digitalicon.png) no-repeat;
+}
+
+.digalb .inner p {
+    position: relative;
+    margin-top: 9px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.digalb .inner a {
+    display: block;
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.digalb .covers {
+    top: 30px;
+    right: 50px;
+    width: 210px;
+    height: 120px;
+}
+
+.f-pa {
+    position: absolute;
+}
+
+.digalb .sml {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.digalb .big {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 60px;
+    width: 120px;
+    height: 120px;
+}
+
+.digalb .circle {
+    position: absolute;
+    top: 0;
+    left: 175px;
+    width: 35px;
+    height: 120px;
+    border: none;
+    background-position: 0px -73px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/pointlist.png) no-repeat 0 9999px;
+}
+
+
+/* 热卖商品 */
+
+.m-block {
+    margin-top: 50px;
+}
+
+.m-block {
+    width: 100%;
+    height: auto;
+    margin-top: 66px;
+}
+
+.m-block .mid-bold {
+    font-weight: bold
+}
+
+.m-block .mid-txt {
+    font-size: 24px;
+    color: #333;
+}
+
+
+/* 商品列表 */
+
+.m-product .cover {
+    width: 263px;
+    height: 263px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.m-product .cnt {
+    margin-top: 10px;
+}
+
+
+/* 右边的固定样式 */
+
+.m-wrap {
+    display: block;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: 570px;
+    z-index: 98;
+    top: 674px;
+    bottom: auto;
+    width: 60px;
+    height: auto;
+    margin-top: 0;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.ab .active {
+    background: #c00;
+    color: #fff;
+    display: block;
+}
+
+
+/* 固定的每一个盒子 */
+
+.m-item {
+    display: block;
+    height: 58px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.m-unclick {
+    cursor: default;
+}
+
+.m-item.shopcar {
+    color: #333333;
+    position: relative;
+}
+
+.m-back {
+    height: 35px;
+    border: none;
+    background-position: -70px -0px;
+}
+
+.shopcar .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 11px 0 5px 17px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/totop.png) no-repeat 0 9999px;
+    background-position: 0px -71px;
+}
+
+.shopcar .num {
+    top: -34px;
+    left: 21px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/log.png);
+    background-position: -156px -158px;
+}
+
+.kefu .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 11px 0 5px 19px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/totop.png) no-repeat 0 9999px;
+    background-position: 0px -101px;
+}
+
+.m-back {
+    height: 35px;
+    border: none;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/totop.png) no-repeat 0 9999px;
+    background-position: -70px -0px;
+}
+
+
+/* 尾部 */
+
+.g-ft {
+    height: 120px;
+    margin-top: -120px;
+    background: #f2f2f2;
+}
+
+.m-ft {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.m-ft .copy {
+    float: left;
+    width: 490px;
+    padding-top: 35px;
+    line-height: 24px;
+}
+
+.s-fc4,
+a.s-fc4:hover {
+    color: #999;
+}
+
+.m-ft .copy .line {
+    margin: 0 8px 0 10px;
+    color: #c2c2c2;
+}
+
+.m-ft .enter {
+    width: 330px;
+    margin-top: 30px;
+}
+
+.f-fr {
+    float: right;
+}
+
+.m-ft .logo {
+    float: left;
+    width: 60px;
+    height: 70px;
+    margin-left: 30px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/foot_enter.png) no-repeat;
+}
+
+.f-tid {
+    text-indent: -9999px;
+}
+
+.m-ft .logo-musician {
+    background-position: -60px -80px;
+    margin-left: 0;
+}
+
+.m-ft .logo-topic {
+    background-position: 0 -80px;
+}
+
+.m-ft .logo-midea {
+    background-position: 0 0;
+}
+
+.m-ft .logo-reward {
+    background-position: -60px 0;
+}

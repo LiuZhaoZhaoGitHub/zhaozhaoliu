@@ -1,0 +1,304 @@
+    body,
+    textarea,
+    select,
+    input,
+    button {
+        font-size: 12px;
+        color: #333;
+        font-family: quote, "PingFang SC", "Microsoft Yahei", "Helvetica Neue", "Helvetica", "STHeitiSC-Light", "Arial", "simsun", sans-serif;
+        -webkit-text-size-adjust: none;
+        word-wrap: break-word;
+        word-break: break-word;
+        white-space: normal;
+    }
+    
+    body,
+    html,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    ol,
+    li,
+    dl,
+    dt,
+    dd,
+    header,
+    menu,
+    section,
+    p,
+    input,
+    td,
+    th {
+        padding: 0;
+        margin: 0;
+    }
+    /* 中心盒子居中 */
+    
+    .g_top {
+        width: 100%
+    }
+    
+    .m-nav {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    /* logo */
+    
+    .m-logo a {
+        background: url(http://www.liuzhaozhao520.top/yunImgs/log.png) no-repeat 0 9999px;
+        display: inline-block;
+        width: 290px;
+        height: 70px;
+        background-position: 0px -48px;
+        text-decoration: none;
+    }
+    /* 搜索 */
+    
+    .m-header .m-search {
+        width: 300px;
+        height: 70px;
+        margin-left: 334px;
+    }
+    
+    .f-fl {
+        float: left;
+    }
+    
+    m-header .inputwrap {
+        width: 300px;
+        height: 69px;
+        padding-top: 1px;
+    }
+    
+    .inputwrap form {
+        width: 100%;
+        height: 38px;
+        margin-top: 15px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/log.png) no-repeat 0 9999px;
+        background-position: 0px -0px;
+        display: block;
+    }
+    
+    .f-pr {
+        position: relative;
+        zoom: 1;
+    }
+    /* input框 */
+    
+    input:focus,
+    textarea:focus,
+    span:focus,
+    a:focus {
+        outline: none;
+    }
+    
+    .m-header .inputwrap input {
+        width: 80%;
+        margin: 10px 0 0 34px;
+        border: 0;
+        background: transparent;
+    }
+    /* 购物车 */
+    
+    .m-header .m-shopcar {
+        width: 36px;
+        height: 36px;
+        margin: 17px 0 0 41px;
+    }
+    
+    .m-header .m-shopcar a {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/log.png) no-repeat 0 9999px;
+        background-position: -110px -158px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #333;
+    }
+    /* 购物车上的数字 */
+    
+    .m-header .num {
+        top: -8px;
+        left: 26px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/log.png) no-repeat 0 9999px;
+        background-position: -156px -158px;
+    }
+    
+    .f-pa {
+        position: absolute;
+    }
+    /* 用户头像 */
+    
+    .m-header .m-select .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+    
+    img,
+    .txt {
+        border: 0;
+    }
+    /* 没有用户头像时 */
+    
+    .m-header .m-user {
+        width: 62px;
+        height: 36px;
+        margin: 15px 0 0 37px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/xiala.png) no-repeat 110% center;
+    }
+    
+    .m-header .m-select {
+        z-index: 99;
+        width: 62px;
+        height: 36px;
+    }
+    
+    .m-header .m-select .login {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .m-user ul {
+        display: none;
+    }
+    
+    .m-user:hover ul {
+        display: block;
+        padding-left: 0;
+        margin-top: 0;
+    }
+    
+    .m-user .arr {
+        display: none;
+    }
+    
+    .m-user:hover .arr {
+        display: block;
+    }
+    /* 登录方式 */
+    
+    .m-header .m-select ul {
+        position: absolute;
+        z-index: 100;
+        top: 54px;
+        left: -61px;
+        width: 160px;
+        height: auto;
+        box-shadow: 0 4px 7px #555;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+        border: 1px solid #cecece\0;
+        border-top: none\0;
+    }
+    
+    .m-header .m-select ul li {
+        padding-left: 24px;
+        font-size: 12px;
+        color: #333;
+        background-color: #fff;
+    }
+    
+    .m-select li a {
+        display: block;
+        width: 134px;
+        padding-left: 1px;
+        height: 40px;
+        line-height: 40px;
+        text-decoration: none;
+    }
+    
+    .m-select li a:hover span {
+        display: block;
+        background-color: #444;
+        filter: alpha(opacity=4);
+        -moz-opacity: 0.04;
+        opacity: 0.04;
+    }
+    
+    .s-fc0,
+    a.s-fc0:hover {
+        color: #000;
+    }
+    /* 悬停之后的 */
+    
+    .m-select li a .phone {
+        height: 16px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/phonelog.png) no-repeat;
+    }
+    
+    .m-select li a em {
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        width: 18px;
+        height: 18px;
+        margin-right: 9px;
+    }
+    
+    .m-select li a .f-pa {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -24px;
+    }
+    
+    .f-pa {
+        position: absolute;
+    }
+    
+    .m-select li a .wechat {
+        height: 16px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/logins.png) no-repeat 0 9999px;
+        background-position: -84px -0px;
+    }
+    
+    .m-select li a .qq {
+        height: 16px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/logins.png) no-repeat 0 9999px;
+        background-position: -112px -0px;
+    }
+    
+    .m-select li a .sina {
+        height: 16px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/sina.png) no-repeat;
+    }
+    
+    .m-select li a .netease {
+        background: url(http://www.liuzhaozhao520.top/yunImgs/netease.png) no-repeat;
+    }
+    /* 下拉 */
+    
+    .m-header .m-select .arr {
+        position: absolute;
+        top: 36px;
+        left: -61px;
+        z-index: 100;
+        width: 160px;
+        height: 18px;
+        background: url(http://www.liuzhaozhao520.top/yunImgs/log.png) no-repeat 0 9999px;
+        background-position: 0px -128px;
+    }
+    
+    .f-cb::after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/car.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div id="module-root" class="root">
+        <div class="g-bd g-bd-home">
+            <div class="m-bread">
+                <div class="block">
+                    <span>购物车</span>
+                </div>
+            </div>
+            <div id="g-main" class="ma">
+                <div class="n-cart">
+                    <div class="empty">
+                        <i class="icon"></i>
+                        <span class="f-fs3" style="margin-left: -10px;">
+                    <span class="s-fc3 f-tc">购物车还是空的 ,</span>
+                        <a href="http://10.31.157.36:8088/Netease%20Cloud/src/html/inde.html" class="s-fcLink">去逛逛 &gt;</a>
+                        </span>
+                    </div>
+                    <!--Regular if9-->
+                </div>
+                <div class="n-cart">
+                    <div class="f-cb s-fc4 head">
+                        <div class="check f-fl">
+                            <i class="checkbox u-checkbox allcheck"></i>
+                        </div>
+                        <div class="cnt f-fl">
+                            <div class="coverwrap f-fl s-fc333">全选</div>
+                            <div class="product f-fl">商品</div>
+                            <div class="pri1 f-fl f-tc">金额</div>
+                            <div class="num1 f-fl f-tc">数量</div>
+                            <div class="pri2 f-fl f-tc">小计</div>
+                            <div class="man f-fl">操作</div>
+                        </div>
+                    </div>
+                    <ul id="goodList"></ul>
+                </div>
+
+                <div class="mid-border">
+                    <span class="mid-txt2">热门推荐</span>
+                </div>
+                <div class="m-product">
+                    <ul class="list f-cb listlil">
+
+                    </ul>
+                    <!--Regular if6-->
+                </div>
+                <!--Regular if7-->
+
+
+                <div style="display: none;">
+                    <div class="m-page ">
+                        <a href="javascript:;" class="zbtn zprv js-disabled"></a>
+                        <!--Regular if8-->
+                        <!--Regular list-->
+                        <a href="javascript:;" class="zpgi js-selected">1</a>
+
+                        <a href="javascript:;" class="zpgi ">0</a>
+
+
+                        <a href="javascript:;" class="zbtn znxt "></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        var nummoney = 0;
+        const nCart = $('.n-cart'); // 0是空 1是有
+        let goods = JSON.parse(localStorage.getItem('goods'));
+        const goodsList = $('#goodList');
+        if (goods && goods.length !== 0) { //如果商品存在并且长度不为0，那么久显示商品结构
+            nCart[1].style.display = 'block';
+            nCart[0].style.display = 'none';
+        } else {
+            nCart[1].style.display = 'none';
+            nCart[0].style.display = 'block';
+        }
+        render(); //调用渲染的结构
+        $('#goodList').on('click', '.numplus', function(e) { //点击+的时候
+            // let addnum = $(this).parent().parent().parent().find('.price').eq(1).html().slice(1); //取到当前的价格
+            // goods.find()
+            goods.find(function(good) {
+                return e.currentTarget.getAttribute('data-sid') === (good.sid + "");
+            }).num += 1;
+            // $('.line').html(addnum)
+            render();
+        })
+
+        $('#goodList').on('click', '.numdown', function(e) { //点击减的时候,事件委托
+            // let ddanum = $(this).parent().parent().parent().find('.price').eq(1).html().slice(1);
+            let good = goods.find(function(good) {
+                return e.currentTarget.getAttribute('data-sid') === (good.sid + "");
+            });
+            if (good.num === 1) goods = goods.filter(good => (good.sid + "") !== e.currentTarget.getAttribute('data-sid'));
+            else good.num--;
+            // $('.line').html(ddanum)
+            render();
+        })
+
+        $('#goodList').on('click', '.delete', function(e) {
+            const sid = Number(e.currentTarget.getAttribute('data-sid'));
+            console.log('sid', typeof sid)
+            goods = goods.filter(good => +good.sid !== sid);
+            render();
+
+        })
+
+        function render() {
+            console.log('render')
+            let temp = ""
+                // let allMoney = goods.reduce((prev, next) => {
+                //     return prev + next.num * (next.price || next.breaks)
+                // }, 0)
+            goods.forEach(good => {
+                temp += `    
+            
+            <li class="f-cb gooditem">
+                            <div class="check f-fl">
+                                <i class="checkbox u-checkbox notcheck"></i>
+                            </div>
+                            <div class="cnt f-fl">
+                                <div class="coverwrap f-fl">
+                                    <div class="cover f-bd2">
+                                        <a target="_blank" href="/store/product/detail?id=17994022">
+                                            <img src="${good.url.split('?')[0]}?param=80y80">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="msg f-fl">
+                                    <a target="_blank" href="http://10.31.157.36:8088/Netease%20Cloud/src/html/goos.html?sid=${good.sid}">
+                                        <p class="tit f-thide">${good.titile}</p>
+                                    </a>
+                                    <p class="sku s-fc4 f-thide"></p>
+                                </div>
+
+                                <div class="price f-fl f-tc">¥<em>${good.price || good.breaks}</em></div>
+                                <div class="ctrl f-fl f-pr f-tc">
+                                    <div class="u-counter f-fl number">
+                                        <a data-action="down" data-sid="${good.sid}" href="javascript:;" class="btn btn-dis j-x numdown"><i class="u-icn u-icn-27"></i></a>
+                                        <span class="tot">
+                                        <input type="text" class="text f-fs1 j-x" value=${good.num}>
+                                        </span>
+                                        <a data-action="plus" data-sid="${good.sid}" href="javascript:;" class="btn j-x numplus"><i class="u-icn u-icn-28"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="price line f-fl f-tc">¥${good.num * (good.price || good.breaks)}</div>
+                                <div class="delete f-fl" data-sid=${good.sid}>
+                                </div>
+                            </div>
+                        </li>
+
+                        `
+            })
+            goodsList.html(
+                `<li class="f-cb s-fc4 first">
+                        <div class="f-fl product">全部商品&nbsp;(&nbsp;1&nbsp;)&nbsp;</div>
+                        <div class="f-fr f-mgr20">
+
+                            <div class="f-fl icon"><i></i></div>
+                            <div class="f-fl txt s-fc333">
+                                全场满<em class="s-fcTheme">¥119</em>免运费
+                            </div>
+
+                        </div>
+        </li>` +
+                temp +
+                `                        <li class="bottom" id="bottom" style="position: static; z-index: 1; bottom: 0px;">
+                            <div class="f-cb s-fc4">
+                                <div class="paybtn f-fr">结算</div>
+                                <div class="f-fr">
+                                    <span class="s-fc4">已享受免运费 &nbsp;|&nbsp; </span>
+                                    <span class="s-fc1">合计&nbsp;:&nbsp;</span>
+                                    <span class="f-fs20 s-fcTheme">
+                                    ¥<em id="allMoney">${nummoney}</em>
+                                        </span>
+                                </div>
+                            </div>
+                        </li>`
+
+            );
+
+            localStorage.setItem('goods', JSON.stringify(goods));
+            if (!goods || goods.length === 0) {
+                nCart[0].style.display = 'block';
+                nCart[1].style.display = 'none';
+            }
+        }
+        $('.head').on('click', '.allcheck', function() {
+
+            if ($(this).hasClass('z-checked')) { //判断当前是否存在这个类名
+                $('.checkbox').removeClass('z-checked'); //存在删除，然后换成未勾选状态
+            } else {
+                $('.checkbox').addClass('z-checked'); //不存在就加上
+            }
+            getAllPrice()
+
+        })
+        $('#goodList').on('click', '.checkbox', function(e) {
+            $(this).toggleClass('z-checked') //存在就删，不存在就加
+            let $num = 0;
+            const listArr = Array.prototype.slice.call($('.checkbox'));
+            listArr.shift();
+            listArr.forEach(item => {
+                if (!$(item).hasClass('z-checked')) {
+                    $('.head .allcheck').removeClass('z-checked');
+                } else {
+                    if (++$num === listArr.length) {
+                        $('.checkbox:nth-of-type(1)').addClass('z-checked'); //不存在就加上
+                    }
+                }
+            })
+            getAllPrice();
+
+        })
+
+        function getAllPrice() {
+            nummoney = Array.prototype.slice.call($('.z-checked')).reduce((prev, next) => {
+                const _this = $(next);
+                if (_this.hasClass('allcheck')) return prev + 0;
+                console.log(_this.parent().parent().find('.price').eq(1))
+                return prev + Number(_this.parent().parent().find('.price').eq(1).html().slice(1));
+            }, 0)
+            $('#allMoney').html(nummoney);
+        }
+
+        // function getadd() {
+        //     console.log($('.numplus').parent().parent().parent().find('.price').eq(1)); //找到+号的价格
+        // }
+    </script>
+</body>
+
+</html>

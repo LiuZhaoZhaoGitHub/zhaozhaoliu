@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+menu,
+dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.n-banner {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+}
+
+.n-banner ul {
+    height: 480px;
+}
+
+.f-pr {
+    position: relative;
+    zoom: 1;
+}
+
+.f-cb {
+    zoom: 1;
+}
+
+.n-banner li {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 480px;
+    background-repeat: repeat-x;
+    background-size: cover;
+    opacity: 0;
+}
+
+.n-banner li.active {
+    opacity: 1;
+}
+
+.f-pa {
+    position: absolute;
+}
+
+li,
+s {
+    list-style: none;
+}
+
+.n-banner li a {
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    width: 1100px;
+    height: 480px;
+    margin-top: -240px;
+    margin-left: -550px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.f-cb::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* 轮播下面的小原点 */
+
+.n-banner .dots {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    bottom: 30px;
+    text-align: center;
+}
+
+.n-banner .dots a {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/dot.png);
+}
+
+.n-banner .dots a.z-sel {
+    position: relative;
+    top: 1px;
+    width: 8px;
+    height: 8px;
+    margin-top: 2px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/dot_hover.png);
+}
+
+
+/* 左右箭头 */
+
+.n-banner .point {
+    position: relative;
+    z-index: 9;
+    top: -294px;
+    display: block;
+}
+
+.n-banner .point a.left {
+    left: 12px;
+}
+
+.n-banner .point a {
+    position: absolute;
+    z-index: 1;
+    width: 37px;
+    height: 63px;
+    top: 0;
+    background-color: #000;
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    opacity: 0.1;
+}
+
+.n-banner .point a.left i.tk,
+.n-banner .point a.right i.tk {
+    background: url(http://www.liuzhaozhao520.top/yunImgs/pointlist.png) no-repeat 0 9999px;
+}
+
+.n-banner .point a.left i.tk {
+    background-position: 0px -0px;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.n-banner .point a i.tk {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.n-banner .point a.right {
+    right: 12px;
+}
+
+.n-banner .point a.right i.tk {
+    background-position: -48px -0px;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+
+/* 轮播下面的热爆商城 */
+
+.g-tab {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.hometab {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.hometab ul {
+    width: 100%;
+    height: 80px;
+}
+
+.f-tc {
+    text-align: center;
+}
+
+.hometab ul .tab {
+    float: left;
+    width: 275px;
+    height: 80px;
+}
+
+.hometab ul li a {
+    float: left;
+    width: 250px;
+    padding: 0 10px;
+    height: 80px;
+    text-align: center;
+    font-size: 0;
+}
+
+.f-blk,
+.f-img,
+.f-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.hometab ul li img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: top;
+    padding-top: 16px;
+}
+
+img,
+.txt {
+    border: 0;
+}
+
+.hometab .tab span {
+    display: inline-block;
+    max-width: 190px;
+    height: 80px;
+    padding-left: 12px;
+    line-height: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.f-thide {
+    word-wrap: normal;
+}
+
+em,
+i {
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+}
+
+
+/* 积分商城 */
+
+.hometab .right {
+    display: inline-block;
+    height: 80px;
+    padding-left: 8px;
+    vertical-align: top;
+}
+
+.hometab .right .txt {
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.hometab .right .count {
+    display: inline-block;
+    font-size: 14px;
+    color: #d33a31;
+}
+
+.hometab .right .jifen {
+    display: inline-block;
+    padding: 2px 0 0 4px;
+    font-size: 12px;
+    color: #d33a31;
+}
+
+.hometab .left {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-top: 15px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/jifen.png) no-repeat;
+}

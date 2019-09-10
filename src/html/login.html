@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body class="" id="">
+    <!-- 头部的盒子 -->
+    <div id="g-topbar" class="g-topbar" style="width: 1519px; top: 0px;">
+        <div class="m-top">
+            <div class="wrap f-cb">
+                <h1 class="logo"><a hidefocus="true" href="/#">网易云音乐</a></h1>
+                <ul class="m-nav j-tflag">
+                    <li class="fst">
+                        <span><a hidefocus="true" href="/#" data-module="discover" class="z-slt"><em>发现音乐</em><sub class="cor">&nbsp;</sub></a></span>
+                    </li>
+                    <li>
+                        <span><a data-action="bilog" data-log-action="page" data-log-json="{&quot;type&quot;:&quot;my&quot;}" hidefocus="true" href="/my/" data-module="my"><em>我的音乐</em><sub class="cor">&nbsp;</sub></a></span>
+                    </li>
+                    <li>
+                        <span><a hidefocus="true" href="/friend" data-module="friend"><em>朋友</em><sub class="cor">&nbsp;</sub><i class="dot j-t" style="display:none;"></i></a></span>
+                    </li>
+                    <li>
+                        <span><a hidefocus="true" href="http://10.31.157.36:8088/Netease%20Cloud/src/html/inde.html" target="_blank" data-module="store"><em>商城</em></a></span>
+                    </li>
+                    <li>
+                        <span><a hidefocus="true" href="/nmusician/web/recruit" target="_blank" data-module="musician"><em>音乐人</em></a></span>
+                    </li>
+                    <li class="lst">
+                        <span><a id="topbar-download-link" data-action="bilog" data-log-action="page" data-log-json="{&quot;type&quot;:&quot;downloadapp&quot;,&quot;source&quot;:&quot;tab&quot;}" hidefocus="true" href="/download" data-module="download"><em>下载客户端</em><sub class="cor">&nbsp;</sub></a></span>
+                        <sup class="hot">&nbsp;</sup>
+                    </li>
+                </ul>
+                <div class="m-tophead f-pr j-tflag" id=""><a hidefocus="true" href="#" class="link s-fc3" data-action="login">登录</a>
+                    <div class="m-tlist j-uflag">
+                        <div class="inner">
+                            <ul class="f-cb">
+                                <li class="lb"><a hidefocus="true" class="itm-1" href="#" data-action="login" data-type="mobile"><i class="icn icn-mb"></i><em>手机号登录</em></a></li>
+                                <li class="ltb"><a hidefocus="true" class="itm-2" href="https://music.163.com/api/sns/authorize?snsType=10&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" target="_blank" data-action="login" data-type="tencent"><i class="icn icn-wx"></i><em>微信登录</em></a></li>
+                                <li class="lb"><a hidefocus="true" class="itm-2" href="https://music.163.com/api/sns/authorize?snsType=5&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" target="_blank" data-action="login" data-type="tencent"><i class="icn icn-qq"></i><em>QQ登录</em></a></li>
+                                <li class="ltb"><a hidefocus="true" class="itm-2" href="https://music.163.com/api/sns/authorize?snsType=2&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" target="_blank" data-action="login" data-type="sina"><i class="icn icn-sn"></i><em>新浪微博登录</em></a></li>
+                                <li class="lb"><a hidefocus="true" class="itm-2" href="#" data-action="login" data-type="netease"><i class="icn icn-wy"></i><em>网易邮箱帐号登录</em></a></li>
+                            </ul>
+                        </div>
+                        <i class="arr"></i>
+                    </div>
+                </div>
+                <a data-action="bilog" data-log-action="click" data-log-json="{&quot;target&quot;:&quot;uploadvideo&quot;,&quot;page&quot;:&quot;homepage&quot;}" href="/login?targetUrl=%2Fst/creator" target="_blank" class="m-topvd f-pr m-creator-center">创作者中心</a>
+                <div class="m-srch f-pr j-suggest" id="g_search">
+                    <div class="srchbg">
+                        <span class="parent">
+        <input type="text" name="srch" id="srch" class="txt j-flag" value="" placeholder="音乐/视频/电台/用户">
+      
+        </span>
+                        <!-- </div>
+                    <div class="j-showoff u-showoff f-hide">
+                        <p>现在支持搜索MV啦~</p>
+                    </div> -->
+                        <!-- <span class="j-flag" style="display:none;" id="auto-id-K4TXtMrKSuLbBM8A">&nbsp;</span>
+                    <div class="u-lstlay j-flag" style="display:none;" id="auto-id-I1GTLKBXJgB3Z9Ai"></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="m-subnav m-subnav-up f-pr j-tflag f-hide"></div>
+            <!-- 红色框 -->
+            <div id="g_nav2" class="m-subnav j-tflag">
+                <div class="wrap f-pr">
+                    <ul class="nav">
+                        <li><a hidefocus="true" data-module="discover" href="/discover"><em>推荐</em></a></li>
+                        <li><a hidefocus="true" data-module="toplist" href="/discover/toplist"><em>排行榜</em></a></li>
+                        <li><a hidefocus="true" data-module="playlist" href="/discover/playlist"><em class="f-pr" style="padding: 0 15px 0 11px;">歌单<span class="f-pa f-r-white-icon" style="display:inline-block;width:8px;height:8px;top:2px;background-size:cover;"></span></em></a></li>
+                        <li><a hidefocus="true" data-module="djradio" href="/discover/djradio"><em>主播电台</em></a></li>
+                        <li><a hidefocus="true" data-module="artist" href="/discover/artist"><em>歌手</em></a></li>
+                        <li><a hidefocus="true" data-module="album" href="/discover/album"><em>新碟上架</em></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 登录注册 -->
+        <div class="g-bd" style="padding-top:56px; background-color:#fafafa;">
+            <h1 class="hd f-ff2">请用你的云音乐帐号登录</h1>
+            <div class="lg" id="login-list">
+                <div class="n-log2 n-log2-1 f-cb">
+                    <div class="u-main">
+                        <div class="u-plt"></div>
+                        <div class="f-mgt10 log">
+                            <a href="#" class="u-btn2 u-btn2-2"><i>手机号登录</i></a>
+                        </div>
+                        <div class="f-mgt10 reg">
+                            <a href="#" class="u-btn2 u-btn2-1"><i>注　册</i></a>
+                        </div>
+                    </div>
+                    <div class="u-alt">
+                        <ul>
+                            <li><a href="https://music.163.com/api/sns/authorize?snsType=10&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" data-action="login" data-type="thirdparty" target="_blank"><i class="u-mlg2 u-mlg2-wx"></i>微信登录</a></li>
+                            <li><a href="https://music.163.com/api/sns/authorize?snsType=5&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" data-action="login" data-type="thirdparty" target="_blank"><i class="u-mlg2 u-mlg2-qq"></i>QQ登录</a></li>
+                            <li><a href="https://music.163.com/api/sns/authorize?snsType=2&amp;clientType=web2&amp;callbackType=Login&amp;forcelogin=true" data-action="login" data-type="thirdparty" target="_blank"><i class="u-mlg2 u-mlg2-sn"></i>微博登录</a></li>
+                            <li><a data-action="login" data-type="netease"><i class="u-mlg2 u-mlg2-wy"></i>网易邮箱帐号登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- 这是手机登录的 -->
+                <div id="mask" style="position:absolute;top:0px;left:0px;width:100%;height:100%;opacity: 0.5; z-index: 60000; background-color: rgb(0, 0, 0);display:none">&nbsp;</div>
+                <div class="m-layer z-show logli" style="left: 492.5px; top: 190px;display: none;z-index: 60001">
+                    <div class="zbar" id="auto-id-qButMnOba76eiwF7">
+                        <div class="zttl f-thide">手机号登录</div>
+                    </div>
+                    <div class="zcnt">
+                        <div class="lyct lyct-1" id="auto-id-EoRp8nAhcRaZkZn4">
+                            <div class="n-log2 n-log2-2">
+                                <div class="j-mob">
+                                    <div class="u-phonewrap" id="auto-id-FCPsTR9lWiVJ6HsI">
+                                        <a class="current" href="javascript:;" data-action="toggle">
+                                            <span class="j-code">+86</span>
+                                            <span class="icn u-icn2 u-icn2-17"></span>
+                                        </a>
+                                        <div class="txtwrap">
+                                            <input type="text" name="p" id="p" class="j-phone txt u-txt loginphone" placeholder="请输入手机号" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="f-mgt10">
+                                    <input type="password" name="pw" id="pw" class="j-pwd u-txt u-txt-err loginpass" placeholder="请输入密码" autocomplete="new-password" aria-autocomplete="list">
+                                </div>
+                                <div class="j-err u-err"><i class="u-icn u-icn-25" style="display: none"></i><span></span></div>
+                                <div class="f-mgt10">
+                                    <label class="s-fc3"><input type="checkbox" checked="checked" class="j-auto u-auto">自动登录</label>
+                                    <a href="#" class="f-fr s-fc3" data-action="forget">忘记密码？</a>
+                                </div>
+                                <div class="f-mgt20">
+                                    <a class="j-primary u-btn2 u-btn2-2 login" hidefocus="true" href="#" data-action="login"><i>登　录</i></a>
+                                </div>
+                            </div>
+                            <div class="js-btmbar n-loglink2 f-cb">
+                                <a href="javascript:;" data-action="select" class="f-fl s-primary otlog">&lt;&nbsp;&nbsp;其他登录方式</a>
+                                <a href="javascript:;" data-action="reg" class="f-fr  regnow">没有帐号？免费注册&nbsp;&nbsp;&gt;</a>
+                            </div>
+                        </div>
+                    </div><span class="zcls" title="关闭窗体">x</span></div>
+                <!-- 这是注册页面 -->
+                <div class="m-layer z-show regli" style="left: 492.5px; top: 190px;display: none;z-index: 60001">
+                    <div class="zbar" id="auto-id-qButMnOba76eiwF7">
+                        <div class="zttl f-thide">手机号登录</div>
+                    </div>
+                    <div class="zcnt">
+                        <div class="lyct lyct-1" id="auto-id-EoRp8nAhcRaZkZn4">
+                            <div class="n-log2 n-log2-2">
+                                <div class="j-mob">
+                                    <div class="u-phonewrap" id="auto-id-FCPsTR9lWiVJ6HsI">
+                                        <a class="current" href="javascript:;" data-action="toggle">
+                                            <span class="j-code">+86</span>
+                                            <span class="icn u-icn2 u-icn2-17"></span>
+                                        </a>
+                                        <div class="txtwrap">
+                                            <input type="text" name="p" id="p" class="j-phone txt u-txt regphone" placeholder="请输入手机号">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="f-mgt10">
+                                    <input type="password" name="pw" id="pw" class="j-pwd u-txt u-txt-err regpass" placeholder="请输入密码">
+                                </div>
+                                <div class="j-err u-err"><i class="u-icn u-icn-25" style="display: none"></i><span></span></div>
+
+                                <div class="f-mgt20">
+                                    <a class="j-primary u-btn2 u-btn2-2" href="#" data-action="login">
+                                        <button class="but">注　册</button></a>
+                                </div>
+                            </div>
+                            <div class="js-btmbar n-loglink2 f-cb">
+                                <a href="javascript:;" data-action="select" class="f-fl s-primary otreg">&lt;&nbsp;&nbsp;返回登录</a>
+
+                            </div>
+                        </div>
+                    </div><span class="zcls" title="关闭窗体" id="auto-id-O7L4NV6uA5sV3T78">X</span></div>
+
+                <!-- 点击登录之后的页面 -->
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="g-btmbar">
+        <div class="m-playbar m-playbar-unlock" style="top: -7px; visibility: visible;">
+            <div class="updn">
+                <div class="left f-fl">
+                    <a href="javascript:;" class="btn" hidefocus="true" data-action="lock"></a>
+                </div>
+                <div class="right f-fl"></div>
+            </div>
+            <div class="bg"></div>
+            <div class="hand" title="展开播放条"></div>
+            <div class="wrap" id="g_player" style="margin-left: -498.5px;">
+                <div class="btns">
+                    <a href="javascript:;" hidefocus="true" data-action="prev" class="prv" title="上一首(ctrl+←)">上一首</a>
+                    <a href="javascript:;" hidefocus="true" data-action="play" class="ply j-flag" title="播放/暂停(p)">播放/暂停</a>
+                    <a href="javascript:;" hidefocus="true" data-action="next" class="nxt" title="下一首(ctrl+→)">下一首</a>
+                </div>
+                <div class="head j-flag"><img src="http://s4.music.126.net/style/web2/img/default/default_album.jpg">
+                    <a href="javascript:;" hidefocus="true" class="mask"></a>
+                </div>
+                <div class="play">
+                    <div class="j-flag words"></div>
+                    <div class="m-pbar" data-action="noop">
+                        <div class="barbg j-flag" id="auto-id-zwQ6yoptAnGSd5Is">
+                            <div class="rdy" style="width:0%;"></div>
+                            <div class="cur" style="width:0%;"><span class="btn f-tdn f-alpha" id="auto-id-a0pHFAlz6VI5TfeT"><i></i></span></div>
+                        </div>
+                        <span class="j-flag time"><em>00:00</em> / 00:00</span>
+                    </div>
+                </div>
+                <div class="oper f-fl">
+                    <a href="javascript:;" hidefocus="true" data-action="like" class="icn icn-add j-flag" title="收藏">收藏</a>
+                    <a href="javascript:;" hidefocus="true" data-action="share" class="icn icn-share" title="分享">分享</a>
+                </div>
+                <div class="ctrl f-fl f-pr j-flag">
+                    <div class="m-vol" style="visibility:hidden;" id="">
+                        <div class="barbg"></div>
+                        <div class="vbg j-t" id="">
+                            <div class="curr j-t" style="height: 74.4px;"></div>
+                            <span class="btn f-alpha j-t" style="top: 16.2px;"></span></div>
+                    </div>
+                    <a href="javascript:;" hidefocus="true" data-action="volume" class="icn icn-vol"></a>
+                    <a href="javascript:;" hidefocus="true" data-action="mode" class="icn icn-loop" title="循环"></a>
+                    <span class="add f-pr">
+        <span class="tip" style="display:none;">已添加到播放列表</span>
+                    <a href="javascript:;" title="播放列表" hidefocus="true" data-action="panel" class="icn icn-list s-fc3">0</a>
+                    </span>
+                    <div class="tip tip-1" style="display:none;">循环</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div></div>
+    </div>
+    <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/login.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/reg.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</body>
+
+</html>

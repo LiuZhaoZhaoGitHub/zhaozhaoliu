@@ -1,0 +1,802 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+em,
+i {
+    font-style: normal;
+    text-align: left;
+    font-size: inherit;
+}
+
+html,
+body {
+    font-size: 12px;
+}
+
+ul {
+    list-style: none;
+}
+
+.n-display li.z-sel,
+.n-display li:hover {
+    border: 2px solid #d33a31;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+body {
+    width: 1100px;
+    min-height: 750px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.f-cb::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.f-fl {
+    float: left;
+}
+
+.f-fr {
+    float: right;
+}
+
+.n-display .smnav {
+    position: relative;
+    z-index: 1;
+    zoom: 1;
+    width: 440px;
+    height: 80px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.n-display ul {
+    width: 3000px;
+    transition: 0.3s;
+}
+
+.n-display li {
+    box-sizing: border-box;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    background: #f9f9f9;
+    border: 2px solid #fff;
+}
+
+.m-bread i {
+    position: relative;
+    top: 7px;
+    display: inline-block;
+    width: 16px;
+    height: 26px;
+    margin: 0 4px 0 8px;
+    background: url(https://s2.music.126.net/store/web/img/ar.png?30a0ac54880bbab933c38d9820bfd1c6) no-repeat left center;
+}
+
+.m-bread .block {
+    padding: 30px 0 19px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.m-bread .pointer {
+    font-size: 16px;
+    color: #999;
+}
+
+.m-bread .share {
+    margin-top: 11px;
+    background: url(https://s2.music.126.net/store/web/img/share.png?813e89061794fff4b0dbf304eacf253a) no-repeat 0 2px;
+    font-size: 16px;
+    text-indent: 27px;
+    color: #666;
+    float: right;
+}
+
+.m-bread {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.n-display .pic {
+    box-sizing: border-box;
+    width: 440px;
+    height: 440px;
+}
+
+.n-display .pic .imgBox {
+    position: relative;
+    overflow: hidden;
+    width: 440px;
+    height: 440px;
+    background: #f9f9f9;
+}
+
+
+/* 大图的盒子 */
+
+.n-display .bigimgbox {
+    overflow: hidden;
+    z-index: 999;
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    top: 93px;
+    left: 651px;
+    background: #f9f9f9;
+}
+
+.n-display .bigimgbox #bpic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1060px;
+    height: 1060px;
+}
+
+
+/*左右 */
+
+.n-display .pic span {
+    display: none;
+    position: absolute;
+    top: 180px;
+    width: 30px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.u-icn {
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/icon.png) no-repeat 0 9999px;
+}
+
+.n-display .pic span.arrowleft {
+    left: 0;
+}
+
+.n-display .pic span.arrowright {
+    right: 0;
+}
+
+.u-icn-arrowl {
+    width: 16px;
+    height: 30px;
+    background-position: 0px -783px;
+}
+
+.n-display .pic .u-icn-arrowl {
+    position: absolute;
+    left: 10px;
+    top: 25px;
+}
+
+.n-display .pic .u-icn-arrowr {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+}
+
+.u-icn-arrowr {
+    width: 16px;
+    height: 30px;
+    background-position: 0px -703px;
+}
+
+
+/* 小放 */
+
+.n-display .pic .smallmask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 220px;
+    cursor: move;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/s-mask.png) no-repeat !important;
+    /* z-index: 100; */
+}
+
+.n-display li img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.n-display .pic .img1 {
+    width: 100%;
+    height: 100%
+}
+
+.n-info {
+    width: 580px;
+}
+
+.n-info .basic {
+    position: relative;
+}
+
+.n-info h2 {
+    line-height: 34px;
+    color: #333;
+    font-size: 24px;
+}
+
+.n-info .basic .sellpoint {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #999;
+}
+
+.n-info .basic .price {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.n-info .basic .price .rmb {
+    font-size: 30px;
+    margin-right: 3px;
+    color: #d33a31;
+}
+
+.n-info .price em {
+    margin-right: 4px;
+    font-size: 30px;
+    color: #d33a31;
+    font-style: normal;
+}
+
+.n-info .price .dis {
+    margin-left: 16px;
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.n-info .basic p sub {
+    position: relative;
+    top: -5px;
+    font-size: 14px;
+    color: #cb3b3b;
+}
+
+.n-info .price .dis {
+    margin-left: 16px;
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.m-services {
+    position: relative;
+    margin-top: 20px;
+}
+
+.m-services p {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+    color: #999;
+}
+
+.m-services .cnt {
+    cursor: pointer;
+    margin-left: 69px;
+}
+
+.m-services .cnt a {
+    display: inline-block;
+    position: relative;
+    line-height: 20px;
+    margin-right: 28px;
+    color: #666;
+}
+
+.m-services .cnt a:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -8px;
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+    background-color: #d33a31;
+}
+
+.m-coupons .title {
+    height: 32px;
+    overflow: hidden;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+    color: #999;
+}
+
+.m-coupons ul {
+    position: absolute;
+    z-index: 99;
+    left: 60px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.m-coupons ul li {
+    width: 518px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #fdf5f4;
+    border: 1px solid #f8e2e0;
+    border-bottom: none;
+}
+
+.m-coupons ul li .label {
+    padding: 0 3px;
+    border: 1px solid #d33a31;
+    color: #d33a31;
+}
+
+.m-coupons ul li span,
+.m-coupons ul li a {
+    margin-left: 8px;
+}
+
+.s-fcLink {
+    color: #328ad4;
+}
+
+.m-coupons ul li .all {
+    margin-right: 10px;
+}
+
+.n-info .count {
+    margin-top: 17px;
+    overflow: hidden;
+}
+
+.n-info .count .number {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 30px;
+    color: #999;
+}
+
+.n-info .count .u-counter {
+    float: left;
+}
+
+.u-counter {
+    width: 132px;
+    height: 30px;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+}
+
+.u-counter .btn {
+    float: left;
+    width: 34px;
+    height: 30px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.u-icn-27 {
+    width: 28px;
+    height: 28px;
+    background-position: -38px -534px;
+}
+
+.u-counter .btn-dis i {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+
+.u-counter .btn i {
+    position: relative;
+    left: 3px;
+    top: 1px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.u-counter .tot {
+    float: left;
+    width: 59px;
+    height: 30px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.u-counter .tot input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.f-fs1 {
+    font-size: 14px;
+}
+
+.u-icn-28 {
+    width: 28px;
+    height: 28px;
+    background-position: 0px -534px;
+}
+
+.n-info .buyorjoin a {
+    position: relative;
+    cursor: pointer;
+}
+
+.n-info .u-btn-white {
+    box-sizing: border-box;
+    line-height: 47px;
+}
+
+.u-btn-white {
+    background-color: white;
+}
+
+.u-btn {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 155px;
+    text-align: center;
+    color: #fff;
+}
+
+.u-btn-white {
+    box-sizing: border-box;
+    border: 2px solid #d33a31;
+    color: #d33a31;
+    font-size: 18px;
+}
+
+.n-info .buyorjoin a {
+    position: relative;
+}
+
+.n-info .u-btn-red-1 {
+    width: 188px;
+}
+
+.n-info .u-btn-red,
+.n-info .u-btn-white {
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.u-btn-red {
+    background-color: #d33a31;
+}
+
+.f-mgr10 {
+    margin-right: 10px;
+}
+
+.n-describe,
+.n-content-left {
+    float: left;
+    width: 700px;
+}
+
+.n-hotrecommend {
+    float: right;
+    width: 340px;
+}
+
+.n-content-left h2 {
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 17px;
+}
+
+.n-content-left h2,
+.n-describe h2,
+.n-fans h2 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    font-size: 22px;
+}
+
+.n-hotrecommend h2 {
+    height: 30px;
+    line-height: 30px;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    font-size: 22px;
+}
+
+.f-ff2 {
+    font-family: quote, "Microsoft Yahei", simsun, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.n-content {
+    overflow: hidden;
+    margin-top: 66px;
+}
+
+.m-product .cnt {
+    margin-top: 0;
+}
+
+.n-hotrecommend .cnt {
+    margin-left: 110px;
+    height: 100px;
+}
+
+.m-product .cnt h3 {
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: left;
+    white-space: normal !important;
+}
+
+
+/* 价格 */
+
+.m-product .cnt h3 {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #333;
+}
+
+.m-product .cnt p {
+    height: 24px;
+    line-height: 24px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.m-product .cnt .txt {
+    font-size: 16px;
+    color: #d33a31;
+}
+
+
+/* 左上角 */
+
+.m-product .cover .spec {
+    background: #d33a31;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.f-pa {
+    position: absolute;
+}
+
+.m-product .cover .spec .origin {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.m-product .cover .spec .cut {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+
+/*  */
+
+.f-thide2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.m-product .tag-red {
+    top: 0;
+}
+
+.m-product .tag-red {
+    border: 1px solid #d74d45;
+}
+
+.m-product .tag {
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 19px;
+    padding: 0 3px;
+    border-radius: 1px;
+    color: #d74d45;
+    font-size: 12px;
+}
+
+.n-hotrecommend .cover {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.m-product .cover {
+    width: 263px;
+    height: 263px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.f-pr {
+    position: relative;
+    zoom: 1;
+}
+
+.m-product .list li {
+    float: left;
+    position: relative;
+    width: 263px;
+    height: 382px;
+    padding-right: 16px;
+}
+
+.m-product .list li {
+    width: 100%;
+    height: 100px;
+}
+
+.n-hotrecommend li {
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.m-product .list {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.n-hotrecommend .cover {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+}
+
+.m-product .cover img {
+    padding: 0;
+}
+
+.n-hotrecommend .cover img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.hover-ulshow:hover #coupon-list {
+    height: auto;
+}
+
+.n-describe p {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px 0;
+    color: #666;
+}
+
+.m-wrap {
+    display: block;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    margin-left: 570px;
+    z-index: 98;
+    top: 674px;
+    bottom: auto;
+    width: 60px;
+    height: auto;
+    margin-top: 0;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.m-item {
+    display: block;
+    height: 58px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.m-unclick {
+    cursor: default;
+}
+
+.m-item.shopcar {
+    color: #333333;
+    position: relative;
+}
+
+.m-back {
+    height: 35px;
+    border: none;
+    background-position: -70px -0px;
+}
+
+.shopcar .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 11px 0 5px 17px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/totop.png) no-repeat 0 9999px;
+    background-position: 0px -71px;
+}
+
+.shopcar .num {
+    top: -34px;
+    left: 21px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    color: #fff;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/log.png);
+    background-position: -156px -158px;
+}
+
+.kefu .icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 11px 0 5px 19px;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/totop.png) no-repeat 0 9999px;
+    background-position: 0px -101px;
+}
+
+.m-back {
+    height: 35px;
+    border: none;
+    background: url(http://www.liuzhaozhao520.top/yunImgs/totop.png) no-repeat 0 9999px;
+    background-position: -70px -0px;
+}
